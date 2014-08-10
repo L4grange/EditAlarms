@@ -30,7 +30,7 @@ BOOL shouldIgnore;
 
     UIButton *tap = [UIButton buttonWithType:UIButtonTypeCustom];
     CGRect croppedFrame = original.frame;
-    croppedFrame.size.width /= 2.f;
+    croppedFrame.size.width /= 1.2f;
     [tap setFrame:croppedFrame];
     [tap setBackgroundColor:[UIColor clearColor]];
     [tap addTarget:self action:@selector(tappedCell:) forControlEvents:UIControlEventTouchUpInside];
